@@ -1,10 +1,13 @@
 <head>
     <meta charset="UTF-8">
-    <title>Manage.Band</title>
+    <meta property="og:image" content="http://tori.website/images/painting.png" />
+    <meta property="og:description" content="Buy this original reproduction on canvas! Now only $100" />
+    <meta property="og:title" content="Tori Ranta - Art on Canvas" />
+    <title>Tori Ranta - Painter</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <!-- Font Awesome -->
     <link href="//maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css" rel="stylesheet">
-<link href='https://fonts.googleapis.com/css?family=Cambay' rel='stylesheet' type='text/css'>
+    <link href='https://fonts.googleapis.com/css?family=Cambay' rel='stylesheet' type='text/css'>
     <!-- Bootstrap -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap-theme.min.css" integrity="sha384-fLW2N01lMqjakBkx3l/M9EahuwpSfeNvV63J5ezn3uZzapT0u7EYsXMjQV+0En5r" crossorigin="anonymous">
@@ -17,7 +20,7 @@
 </head>
     <body style="background-color:#000">
         <div class="col-sm-4 col-sm-offset-4">
-            <img class="img-responsive" src="http://localhost/t-rantula/public/images/painting.png">
+            <img class="img-responsive" src="http://tori.website/images/painting.png">
         </div>
         <div class="col-sm-4 col-sm-offset-4" style="color:#fff">
             <h4 style="text-align:center">
