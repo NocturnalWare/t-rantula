@@ -9,6 +9,10 @@
 @stop
 
 @section('content')
+#stars
+#stars2
+#stars3
+#title
     <body id="maincontent" style="background-color:#000;max-height:100%;overflow:hidden">
         <div class="col-sm-4 col-sm-offset-4">
             <center>
@@ -158,32 +162,24 @@ function mobileImageSwitch(){
 $('#maincontent').mousewheel(function(event, delta){
     var height = $('#mainimage').attr('height').replace('%', '');
     var width = $('#mainimage').attr('width').replace('%', '');
-    var image = $('#mainimage').attr('image-id');
     var delta_px = delta > 0 ? parseFloat(height)-4 : parseFloat(width)+4;
-
-    if(parseFloat(image) == 3){
-        image = 0;
-    }
-
+    
     if(height < 100 && height > 3){
         $('#mainimage').attr('width', delta_px+'%');
         $('#mainimage').attr('height', delta_px+'%');
     }else{
         $('#mainimage').attr('width', '5%');
         $('#mainimage').attr('height', '5%');
-        imageSwitch(image);
+        imageSwitch();
     }
 });
 
-function imageSwitch(img){
-    $('#mainimage').attr('image-id', parseFloat(img)+1);
-    switch(img){
-        case '1':
-            $('#mainimage').attr('src', 'http://tori.website/images/polar_lights.jpg');
-        break;
-        case '2':
-            $('#mainimage').attr('src', 'http://tori.website/images/painting.png');
-        break;
+function imageSwitch(){
+    var image = $('#mainimage').attr('src');
+    if(image == 'http://tori.website/images/polar_lights.jpg'){
+        $('#mainimage').attr('src', 'http://tori.website/images/painting.png');
+    }else{
+        $('#mainimage').attr('src', 'http://tori.website/images/polar_lights.jpg');
     }
 }
 
