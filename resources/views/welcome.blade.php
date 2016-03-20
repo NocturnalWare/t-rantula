@@ -162,10 +162,16 @@ function mobileImageSwitch(){
     }
 }
 
-$('#maincontent').mousewheel(function(event, delta){
+$('#maincontent').mousewheel(function(event, delta, deltaX, deltaY){
     var height = $('#mainimage').attr('height').replace('%', '');
     var width = $('#mainimage').attr('width').replace('%', '');
-    var delta_px = delta > 0 ? parseFloat(height)-2 : parseFloat(width)+2;
+    var delta_px = delta > 0 ? (parseFloat(height)+2)+deltaY : (parseFloat(width)-2)+deltaY;
+
+            // delta = 0,
+            // deltaX = 0,
+            // deltaY = 0,
+            // absDelta = 0,
+            // absDeltaXY = 0,
 
     if(height < 100){
         $('#mainimage').attr('width', delta_px+'%');
