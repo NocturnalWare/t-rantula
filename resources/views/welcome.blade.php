@@ -12,7 +12,8 @@
     <body id="maincontent" style="background-color:#000;max-height:100%;overflow:hidden">
         <div class="col-sm-4 col-sm-offset-4">
             <center>
-                <img id="mainimage" height="5%" width="5%" image-id="1" class="img-responsive" src="http://tori.website/images/painting.png">
+                <img id="mainimage" height="5%" width="5%" image-id="1" class="hidden-xs img-responsive" src="http://tori.website/images/painting.png">
+                <img id="mainimage2" class="hidden-sm hidden-md hidden-lg hidden-xl img-responsive" src="http://tori.website/images/painting.png">
             </center>
         </div>
         <div class="col-sm-4 col-sm-offset-4" style="color:#fff">
@@ -20,7 +21,7 @@
                 <div class="row">
                    I'm Tori Ranta. This is an original reproduction on canvas.
                 </div>
-                <div class="row" style="padding-top:15px;">
+                <div class="row" style="padding-top:15px;display:none">
                     Buy it now for <u>$100.00</u>
                 </div>
             </h4>
@@ -137,9 +138,22 @@
 
 }));
 
-$("p").on("swipeleft",function(){
-  alert("You swiped left!");
+$("#maincontent").on("swipeleft", function(){
+    mobileImageSwitch();
 });
+
+$("#maincontent").on("swiperight", function(){
+    mobileImageSwitch();
+});
+
+function mobileImageSwitch(){
+    var image = $('#mainimage2').attr('src');
+    if(image == 'http://tori.website/images/polar_lights.jpg'){
+        $('#mainimage2').attr('src', 'http://tori.website/images/painting.png');
+    }else{
+        $('#mainimage2').attr('src', 'http://tori.website/images/polar_lights.jpg');
+    }
+}
 
 $('#maincontent').mousewheel(function(event, delta){
     var height = $('#mainimage').attr('height').replace('%', '');
