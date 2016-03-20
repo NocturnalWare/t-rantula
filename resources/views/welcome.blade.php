@@ -167,12 +167,18 @@ $('#maincontent').mousewheel(function(event, delta){
     var width = $('#mainimage').attr('width').replace('%', '');
     var delta_px = delta > 0 ? parseFloat(height)-4 : parseFloat(width)+4;
 
-    if(height < 100 && height > 3){
+    if(height < 100){
         $('#mainimage').attr('width', delta_px+'%');
         $('#mainimage').attr('height', delta_px+'%');
     }else{
         $('#mainimage').attr('width', '5%');
         $('#mainimage').attr('height', '5%');
+        imageSwitch();
+    }
+    
+    if(height < 3){
+        $('#mainimage').attr('width', '80%');
+        $('#mainimage').attr('height', '80%');
         imageSwitch();
     }
 });
