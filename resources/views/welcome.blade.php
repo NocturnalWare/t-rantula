@@ -1,37 +1,37 @@
 @extends('layouts.master')
 
-@section('title')
+@section('head')
     <meta charset="UTF-8">
     <meta property="og:image" content="http://tori.website/images/painting.png" />
     <meta property="og:description" content="Buy this original reproduction on canvas! Now only $100" />
     <meta property="og:title" content="Tori Ranta - Art on Canvas" />
+@stop
+
+@section('title')
     <title>Tori Ranta - Painter</title>
 @stop
 
 @section('content')
-#stars
-#stars2
-#stars3
-#title
-    <body id="maincontent" style="background-color:#000;max-height:100%;overflow:hidden">
-        <div class="col-sm-4 col-sm-offset-4">
-            <center>
-                <img id="mainimage" height="80%" width="80%" image-id="1" class="hidden-xs img-responsive" src="http://tori.website/images/painting.png">
-                <img id="mainimage2" class="hidden-sm hidden-md hidden-lg hidden-xl img-responsive" src="http://tori.website/images/painting.png">
-            </center>
-        </div>
-        <div class="col-sm-4 col-sm-offset-4" style="color:#fff">
-            <h4 style="text-align:center">
-                <div class="row">
-                   I'm Tori Ranta. This is an original reproduction on canvas.
-                </div>
-                <div class="row" style="padding-top:15px;display:none">
-                    Buy it now for <u>$100.00</u>
-                </div>
-            </h4>
-        </div>
-    </body>
-</html>
+<div id="stars">
+    <div id="stars2">
+        <div id="stars3">
+        <body id="maincontent" style="background-color:#000;max-height:100%;overflow:hidden">
+            <div class="col-sm-4 col-sm-offset-4">
+                <center>
+                    <img id="mainimage" height="80%" width="80%" image-id="1" class="hidden-xs img-responsive" src="http://tori.website/images/painting.png">
+                    <img id="mainimage2" class="hidden-sm hidden-md hidden-lg hidden-xl img-responsive" src="http://tori.website/images/painting.png">
+                </center>
+            </div>
+            <div class="col-sm-4 col-sm-offset-4" style="color:#fff">
+                <h4 style="text-align:center">
+                    <div class="row">
+                       I'm Tori Ranta. This is an original reproduction on canvas.
+                    </div>
+                    <div class="row" style="padding-top:15px;display:none">
+                        Buy it now for <u>$100.00</u>
+                    </div>
+                </h4>
+            </div>
 
 
 <script type="text/javascript">
@@ -163,7 +163,7 @@ $('#maincontent').mousewheel(function(event, delta){
     var height = $('#mainimage').attr('height').replace('%', '');
     var width = $('#mainimage').attr('width').replace('%', '');
     var delta_px = delta > 0 ? parseFloat(height)-4 : parseFloat(width)+4;
-    
+
     if(height < 100 && height > 3){
         $('#mainimage').attr('width', delta_px+'%');
         $('#mainimage').attr('height', delta_px+'%');
