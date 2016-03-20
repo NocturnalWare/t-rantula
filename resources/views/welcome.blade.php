@@ -165,7 +165,7 @@ function mobileImageSwitch(){
 $('#maincontent').mousewheel(function(event, delta){
     var height = $('#mainimage').attr('height').replace('%', '');
     var width = $('#mainimage').attr('width').replace('%', '');
-    var delta_px = delta > 0 ? parseFloat(height)-4 : parseFloat(width)+4;
+    var delta_px = delta > 0 ? parseFloat(height)-2 : parseFloat(width)+2;
 
     if(height < 100){
         $('#mainimage').attr('width', delta_px+'%');
