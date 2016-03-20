@@ -12,9 +12,10 @@
 @stop
 
 @section('content')
-<div id="stars">
-    <div id="stars2">
-        <div id="stars3">
+<div id="stars"></div>
+<div id="stars2"></div>
+<div id="stars3"></div>
+    <div id="title">
         <body id="maincontent" style="background-color:#000;max-height:100%;overflow:hidden">
             <div class="col-sm-4 col-sm-offset-4">
                 <center>
@@ -32,6 +33,8 @@
                     </div>
                 </h4>
             </div>
+        </div>
+        </div>
 
 
 <script type="text/javascript">
