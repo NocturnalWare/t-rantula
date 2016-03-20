@@ -12,7 +12,7 @@
     <body id="maincontent" style="background-color:#000;max-height:100%;overflow:hidden">
         <div class="col-sm-4 col-sm-offset-4">
             <center>
-                <img id="mainimage" height="5%" width="5%" image-id="1" class="hidden-xs img-responsive" src="http://tori.website/images/painting.png">
+                <img id="mainimage" height="80%" width="80%" image-id="1" class="hidden-xs img-responsive" src="http://tori.website/images/painting.png">
                 <img id="mainimage2" class="hidden-sm hidden-md hidden-lg hidden-xl img-responsive" src="http://tori.website/images/painting.png">
             </center>
         </div>
