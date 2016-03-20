@@ -49,3 +49,32 @@
   background: transparent;
   box-shadow: 1674px 1036px #FFF , 1297px 724px #FFF , 644px 873px #FFF , 1911px 1087px #FFF , 1032px 676px #FFF , 1907px 1553px #FFF , 896px 335px #FFF , 1069px 1556px #FFF , 39px 804px #FFF , 1384px 1898px #FFF , 1045px 259px #FFF , 1918px 1192px #FFF , 683px 381px #FFF , 465px 837px #FFF , 992px 1029px #FFF , 1980px 1573px #FFF , 1808px 727px #FFF , 1694px 797px #FFF , 225px 37px #FFF , 511px 268px #FFF , 789px 731px #FFF , 997px 1996px #FFF , 437px 1291px #FFF , 246px 1466px #FFF , 1209px 1706px #FFF , 1292px 1581px #FFF , 619px 1208px #FFF , 1075px 903px #FFF , 921px 1586px #FFF , 1917px 1880px #FFF , 1271px 1434px #FFF , 1124px 1410px #FFF , 632px 544px #FFF , 1614px 540px #FFF , 1452px 968px #FFF , 238px 930px #FFF , 1126px 272px #FFF , 382px 645px #FFF , 917px 982px #FFF , 1764px 1595px #FFF , 1230px 1069px #FFF , 1848px 773px #FFF , 1251px 735px #FFF , 1481px 783px #FFF , 447px 625px #FFF , 1687px 955px #FFF , 1880px 765px #FFF , 1358px 1488px #FFF , 1165px 1727px #FFF , 1930px 722px #FFF , 405px 590px #FFF , 1580px 1233px #FFF , 1085px 1746px #FFF , 1590px 1945px #FFF , 1963px 1693px #FFF , 740px 499px #FFF , 1793px 405px #FFF , 237px 300px #FFF , 231px 862px #FFF , 786px 1646px #FFF , 1122px 1322px #FFF , 782px 622px #FFF , 279px 1178px #FFF , 469px 69px #FFF , 474px 437px #FFF , 35px 283px #FFF , 1954px 423px #FFF , 1119px 1659px #FFF , 1724px 1938px #FFF , 463px 349px #FFF , 1400px 1086px #FFF , 376px 1706px #FFF , 945px 201px #FFF , 323px 1584px #FFF , 1666px 500px #FFF , 1183px 1056px #FFF , 1583px 1141px #FFF , 1640px 133px #FFF , 1619px 283px #FFF , 700px 210px #FFF , 1739px 700px #FFF , 1582px 1733px #FFF , 1232px 1053px #FFF , 304px 692px #FFF , 1581px 1976px #FFF , 669px 158px #FFF , 793px 1060px #FFF , 165px 233px #FFF , 1556px 175px #FFF , 1254px 1849px #FFF , 714px 1066px #FFF , 1689px 1414px #FFF , 1429px 1401px #FFF , 1365px 1303px #FFF , 82px 903px #FFF , 1409px 1772px #FFF , 1009px 459px #FFF , 1870px 1245px #FFF , 1653px 1750px #FFF , 1750px 528px #FFF;
 }
+
+#title {
+  position: absolute;
+  top: 50%;
+  left: 0;
+  right: 0;
+  color: #FFF;
+  text-align: center;
+  font-family: "lato", sans-serif;
+  font-weight: 300;
+  font-size: 50px;
+  letter-spacing: 10px;
+  margin-top: -60px;
+  padding-left: 10px;
+}
+#title span {
+  background: -webkit-linear-gradient(white, #38495a);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+@keyframes animStar {
+  from {
+    transform: translateY(0px);
+  }
+  to {
+    transform: translateY(-2000px);
+  }
+}
